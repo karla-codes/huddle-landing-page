@@ -9,27 +9,28 @@
   }
 
   &__logo-box {
-    width: 30rem;
     display: flex;
     justify-content: flex-start;
+    align-self: center;
   }
 
   &__logo {
-    width: 20rem;
+    height: 1.4rem;
   }
 
   &__cta {
-    width: 12rem;
+    width: 9rem;
     display: flex;
     justify-content: flex-end;
     border: 1px solid $color-primary;
     border-radius: 50px;
-    padding: .7rem 2rem;
+    padding: .5rem 0;
   }
 
   &-btn {
     width: inherit;
+    font-size: 10px;
     text-align: center;
-
+    color: $color-primary;
   }
 }
