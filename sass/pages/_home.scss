@@ -19,18 +19,28 @@
   }
 
   &__cta {
-    width: 9rem;
     display: flex;
     justify-content: flex-end;
+  }
+
+  &-btn {
+    font-size: 10px;
+    text-align: center;
+    color: $color-primary;
+
+    width: 8.5rem;
     border: 1px solid $color-primary;
     border-radius: 50px;
     padding: .5rem 0;
   }
 
-  &-btn {
-    width: inherit;
-    font-size: 10px;
-    text-align: center;
-    color: $color-primary;
+  .hero {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      margin-top: 3.2rem;
+    }
   }
 }
