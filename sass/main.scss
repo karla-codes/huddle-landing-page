@@ -1,8 +1,6 @@
-@import "abstract/variables";
+@import "variables";
 
-@import "components/button";
-
-@import "base/base";
-@import "base/typography";
-
-@import "pages/home";
+@import "button";
+@import "base";
+@import "typography";
+@import "home";

@@ -3,14 +3,10 @@
 
   &__nav {
     width: inherit;
-    display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
   }
 
   &__logo-box {
-    display: flex;
-    justify-content: flex-start;
     align-self: center;
   }
 
@@ -19,7 +15,6 @@
   }
 
   &__cta {
-    display: flex;
     justify-content: flex-end;
   }
 
@@ -36,7 +31,6 @@
 
   .hero {
     margin-top: 10rem;
-    display: flex;
     flex-direction: column;
 
     &__text {
