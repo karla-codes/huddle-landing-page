@@ -32,3 +32,20 @@ body {
     color: #8E9CA5;
   }
 }
+
+.info {
+
+  &__heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__text {
+    width: 85%;
+    margin: 2.2rem auto;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+}

@@ -22,8 +22,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
 
 a,
 a:link,
@@ -67,8 +66,21 @@ body {
   text-align: center;
   color: #8E9CA5; }
 
+.info__heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+
+.info__text {
+  width: 85%;
+  margin: 2.2rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.6; }
+
 .header {
-  width: 100%; }
+  width: 100%;
+  padding: 3rem; }
   .header__nav {
     width: inherit;
     flex-flow: row nowrap; }
@@ -105,3 +117,30 @@ body {
       top: 10px;
       left: 30px;
       width: 2.4rem; }
+
+.info__curve-top {
+  position: relative;
+  top: 10px; }
+
+.info__curve-img {
+  width: 100%; }
+
+.info__curved-box {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f5faff;
+  padding-top: 9.4rem;
+  padding-bottom: 6rem; }
+
+.info__box {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 13rem;
+  margin-bottom: 13rem; }
+
+.info__img {
+  width: 70%;
+  margin: 0 auto 6.4rem; }
+
+.info__heading {
+  margin: 0 auto; }

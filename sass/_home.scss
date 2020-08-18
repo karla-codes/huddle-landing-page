@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  padding: 3rem;
 
   &__nav {
     width: inherit;
@@ -61,7 +62,48 @@
       width: 2.4rem;
     }
 
-
-
   }
 }
+
+.info {
+
+  &__curve-top {
+    position: relative;
+    top: 10px;
+  }
+
+  &__curve-img {
+    width: 100%;
+  }
+
+  &__curved-box {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: hsl(207, 100%, 98%);
+    padding-top: 9.4rem;
+    padding-bottom: 6rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+  }
+
+  &__img {
+    width: 70%;
+    margin: 0 auto 6.4rem;
+  }
+
+  &__heading {
+    margin: 0 auto;
+  }
+
+}
+
+// .background__img-1 {
+//   hsl(207, 100%, 98%);
+// }
+
+// background: url(/images/illustration-grow-together.svg) 50% 100px / contain no-repeat,
