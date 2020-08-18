@@ -57,6 +57,16 @@ body {
   text-align: center;
   line-height: 1.6; }
 
+.hero__large-text {
+  font-weight: 700;
+  font-size: 5.5rem;
+  text-align: center; }
+
+.hero__small-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #8E9CA5; }
+
 .header {
   width: 100%; }
   .header__nav {
@@ -67,7 +77,6 @@ body {
   .header__logo {
     height: 1.4rem; }
   .header__cta {
-    display: flex;
     justify-content: flex-end; }
   .header-btn {
     font-size: 10px;
@@ -79,7 +88,20 @@ body {
     padding: .5rem 0; }
   .header .hero {
     margin-top: 10rem;
-    display: flex;
     flex-direction: column; }
     .header .hero__text {
       margin-top: 3.2rem; }
+    .header .hero__image-box {
+      margin-top: 10rem; }
+      .header .hero__image-box--image {
+        width: 100%; }
+    .header .hero__info:not(:first-child) {
+      margin-top: 8rem; }
+    .header .hero__info-box {
+      margin: 12rem auto 0;
+      width: 60%; }
+    .header .hero__icon {
+      position: relative;
+      top: 10px;
+      left: 30px;
+      width: 2.4rem; }

@@ -36,5 +36,32 @@
     &__text {
       margin-top: 3.2rem;
     }
+
+    &__image-box {
+      margin-top: 10rem;
+
+      &--image {
+        width: 100%;
+      }
+    }
+
+    &__info:not(:first-child) {
+      margin-top: 8rem;
+    }
+
+    &__info-box {
+      margin: 12rem auto 0;
+      width: 60%;
+    }
+
+    &__icon {
+      position: relative;
+      top: 10px;
+      left: 30px;
+      width: 2.4rem;
+    }
+
+
+
   }
 }
