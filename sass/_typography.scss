@@ -49,3 +49,9 @@ body {
     line-height: 1.6;
   }
 }
+
+.cta {
+  &__heading {
+    font-family: 'Poppins', sans-serif;
+  }
+}
