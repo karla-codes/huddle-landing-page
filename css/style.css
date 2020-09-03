@@ -176,12 +176,9 @@ footer {
   .cta__heading {
     text-align: center; }
 
-.footer__curve {
-  position: relative;
-  top: 10px; }
-
 footer {
-  background-color: #00252e; }
+  background-color: #00252e;
+  flex-direction: column; }
   footer .newsletter-form {
     padding: 6rem 2rem 2rem; }
     footer .newsletter-form__heading {
@@ -208,6 +205,11 @@ footer {
 
 .footer {
   padding: 2rem; }
+  .footer__curve {
+    position: relative;
+    top: 10px; }
+    .footer__curve-img {
+      width: 100%; }
   .footer__header {
     flex-direction: row;
     justify-content: flex-start;
@@ -218,3 +220,24 @@ footer {
       width: 5rem; }
       .footer__header-icon-img {
         width: 100%; }
+  .footer__contact {
+    flex-direction: column;
+    margin-top: 4rem; }
+    .footer__contact-box {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+    .footer__contact-box:not(:first-child) {
+      margin-top: 2rem; }
+    .footer__contact-icon {
+      margin-right: 1.6rem; }
+  .footer__social {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 6rem 0 3rem; }
+    .footer__social-icon {
+      width: 2.8rem;
+      margin-right: 1.5rem; }
+
+.attribution {
+  padding: 3rem; }
