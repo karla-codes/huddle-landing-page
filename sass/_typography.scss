@@ -55,3 +55,18 @@ body {
     font-family: 'Poppins', sans-serif;
   }
 }
+
+footer {
+  color: #ffffff;
+
+  & .newsletter-form__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  & .newsletter-form__text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 3.2rem;
+  }
+}
