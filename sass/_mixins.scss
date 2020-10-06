@@ -1,0 +1,13 @@
+// Media queries
+
+@mixin tablet-landscape {
+  @media screen and (min-width: 56.25rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 75rem) {
+    @content;
+  }
+}
