@@ -51,6 +51,9 @@ body {
   font-size: 2.3rem;
   line-height: 1.5;
   text-align: center; }
+  @media screen and (min-width: 56.25rem) {
+    .hero__heading {
+      font-size: 3rem; } }
 
 .hero__text {
   font-size: 1.4rem;
@@ -73,7 +76,6 @@ body {
   text-align: center; }
 
 .info__text {
-  width: 85%;
   margin: 2.2rem auto;
   text-align: center;
   font-size: 1.4rem;
@@ -96,14 +98,15 @@ footer {
   font-size: 4.8rem; }
 
 .footer__text {
-  margin-top: 1rem;
-  width: 100%;
   font-size: 1.5rem;
   line-height: 1.8; }
 
 .header {
   width: 100%;
   padding: 3rem; }
+  @media screen and (min-width: 56.25rem) {
+    .header {
+      padding: 4rem 6rem; } }
   .header__nav {
     width: inherit;
     flex-flow: row nowrap; }
@@ -111,6 +114,9 @@ footer {
     align-self: center; }
   .header__logo {
     height: 1.4rem; }
+    @media screen and (min-width: 56.25rem) {
+      .header__logo {
+        height: 2rem; } }
   .header__cta {
     justify-content: flex-end; }
   .header-btn {
@@ -125,48 +131,72 @@ footer {
     margin-top: 10rem;
     flex-direction: column; }
     .header .hero__text {
+      width: Min(100%, 45rem);
+      margin: 0 auto;
       margin-top: 3.2rem; }
     .header .hero__image-box {
-      margin-top: 10rem; }
+      margin: 10rem auto;
+      width: Min(100%, 75rem); }
       .header .hero__image-box--image {
         width: 100%; }
+    .header .hero__info {
+      width: 20rem;
+      margin: 0 auto; }
     .header .hero__info:not(:first-child) {
       margin-top: 8rem; }
+      @media screen and (min-width: 56.25rem) {
+        .header .hero__info:not(:first-child) {
+          margin-top: 0; } }
     .header .hero__info-box {
+      flex-direction: column;
       margin: 12rem auto 0;
-      width: 19rem; }
+      width: Min(100%, 75rem); }
+      @media screen and (min-width: 56.25rem) {
+        .header .hero__info-box {
+          flex-direction: row; } }
     .header .hero__icon {
       position: relative;
       top: 10px;
       left: 30px;
       width: 2.4rem; }
 
-.info__curve-top {
-  position: relative;
-  top: 10px; }
-
-.info__curve-img {
+.info {
   width: 100%; }
-
-.info__curved-box {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: #f5faff;
-  padding-top: 9.4rem;
-  padding-bottom: 6rem; }
-
-.info__box {
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 13rem;
-  margin-bottom: 13rem; }
-
-.info__img {
-  width: 70%;
-  margin: 0 auto 6.4rem; }
-
-.info__heading {
-  margin: 0 auto; }
+  .info__top-curve-one {
+    background: url(../images/bg-section-top-mobile-1.svg) bottom center/cover no-repeat;
+    width: 100%;
+    position: relative;
+    height: 30vh; }
+    @media screen and (min-width: 56.25rem) {
+      .info__top-curve-one {
+        background: url(../images/bg-section-top-desktop-1.svg) bottom center/100% no-repeat; } }
+  .info__bottom-curve-one {
+    background: url(../images/bg-section-bottom-mobile-1.svg) bottom center/100% no-repeat;
+    width: 100%;
+    position: relative; }
+    @media screen and (min-width: 56.25rem) {
+      .info__bottom-curve-one {
+        background: url(../images/bg-section-bottom-desktop-1.svg) bottom center/100% no-repeat; } }
+  .info__curve-img {
+    width: 100%; }
+  .info__curved-box {
+    flex-flow: column nowrap;
+    background-color: #f5faff;
+    padding-top: 9.4rem;
+    padding-bottom: 6rem; }
+  .info__box {
+    flex-flow: column nowrap;
+    margin-top: 13rem;
+    margin-bottom: 13rem; }
+  .info__img {
+    width: Min(70%, 43rem);
+    margin: 0 auto 6.4rem; }
+  .info-text-container {
+    width: 100%; }
+  .info__heading {
+    margin: 0 auto; }
+  .info__text {
+    width: Min(85%, 38rem); }
 
 .cta {
   padding: 3rem;
@@ -178,21 +208,24 @@ footer {
 
 footer {
   background-color: #00252e;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 3rem; }
   footer .newsletter-form {
-    padding: 6rem 2rem 2rem; }
+    width: Min(100%, 40rem); }
     footer .newsletter-form__heading {
       margin-bottom: 1.5rem; }
+    footer .newsletter-form__text {
+      width: Min(100%, 40rem); }
     footer .newsletter-form__input {
       flex-direction: column;
       align-items: flex-end; }
       footer .newsletter-form__input-email {
-        width: 100%;
+        width: Min(100%, 40rem);
         height: 5rem;
         border-radius: .6rem;
         padding: 0; }
       footer .newsletter-form__input-submit {
-        width: 50%;
+        width: Min(50%, 20rem);
         height: 5rem;
         background-color: #ff52bf;
         color: #fff;
@@ -203,41 +236,50 @@ footer {
         padding: 0;
         margin-top: 1rem; }
 
-.footer {
-  padding: 2rem; }
-  .footer__curve {
-    position: relative;
-    top: 10px; }
-    .footer__curve-img {
+.footer__container {
+  flex-direction: column;
+  margin-top: 3rem; }
+
+.footer__curve {
+  position: relative;
+  top: 10px; }
+  .footer__curve-img {
+    width: 100%; }
+
+.footer__text {
+  margin-top: 1rem;
+  width: Min(100%, 34rem); }
+
+.footer__header {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 9rem auto 0; }
+  .footer__header-icon {
+    width: 5rem; }
+    .footer__header-icon-img {
       width: 100%; }
-  .footer__header {
+
+.footer__contact {
+  flex-direction: column;
+  margin-top: 4rem; }
+  .footer__contact-box {
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin: 9rem auto 0; }
-    .footer__header-icon {
-      width: 5rem; }
-      .footer__header-icon-img {
-        width: 100%; }
-  .footer__contact {
-    flex-direction: column;
-    margin-top: 4rem; }
-    .footer__contact-box {
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center; }
-    .footer__contact-box:not(:first-child) {
-      margin-top: 2rem; }
-    .footer__contact-icon {
-      margin-right: 1.6rem; }
-  .footer__social {
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 6rem 0 3rem; }
-    .footer__social-icon {
-      width: 2.8rem;
-      margin-right: 1.5rem; }
+    align-items: center; }
+  .footer__contact-box:not(:first-child) {
+    margin-top: 2rem; }
+  .footer__contact-icon {
+    margin-right: 1.6rem; }
+
+.footer__social {
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 6rem 0 3rem; }
+  .footer__social-icon {
+    width: 2.8rem;
+    margin-right: 1.5rem; }
 
 .attribution {
-  padding: 3rem; }
+  padding-top: 3rem; }

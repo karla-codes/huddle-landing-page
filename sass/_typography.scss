@@ -12,6 +12,10 @@ body {
     font-size: 2.3rem;
     line-height: 1.5;
     text-align: center;
+
+    @include tablet-landscape {
+      font-size: 3rem;
+    }
   }
 
   &__text {
@@ -42,7 +46,6 @@ body {
   }
 
   &__text {
-    width: 85%;
     margin: 2.2rem auto;
     text-align: center;
     font-size: 1.4rem;
@@ -78,8 +81,6 @@ footer {
   }
 
   &__text {
-    margin-top: 1rem;
-    width: 100%;
     font-size: 1.5rem;
     line-height: 1.8;
   }
